@@ -1,10 +1,3 @@
-/*
-  controllers/authController.js
-  ──────────────────────────────
-  Handles user registration and login.
-  After login, a JWT token is returned to the client.
-  Every login/register event is also logged to MySQL (session_logs table).
-*/
 
 const jwt  = require('jsonwebtoken');
 const User = require('../models/User');
