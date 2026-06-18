@@ -1,17 +1,4 @@
-/*
-  controllers/taskController.js
-  ──────────────────────────────
-  CRUD operations for tasks.
-  All routes are protected — user must be logged in (JWT verified by middleware).
-  Users can only see and edit THEIR OWN tasks (filtered by owner: req.user._id).
 
-  CRUD = Create, Read, Update, Delete
-  ─────────────────────────────────────
-  GET    /api/tasks         → get all tasks for logged-in user
-  POST   /api/tasks         → create a new task
-  PUT    /api/tasks/:id     → update a task (title, description, status, dueDate)
-  DELETE /api/tasks/:id     → delete a task
-*/
 
 const Task = require('../models/Task');
 
