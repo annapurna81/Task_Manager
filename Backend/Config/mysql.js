@@ -1,15 +1,3 @@
-/*
-  config/mysql.js
-  ───────────────
-  Connects to MySQL and creates the session_logs table if it doesn't exist.
-  MySQL stores:
-    - Login history (who logged in, from which IP, at what time)
-    - Session records (JWT token reference, expiry)
-
-  WHY TWO DATABASES?
-  MongoDB  → flexible schema, great for tasks (which may have different fields)
-  MySQL    → structured, great for login logs (fixed columns, easy to query)
-*/
 
 const mysql = require('mysql2/promise');
 
