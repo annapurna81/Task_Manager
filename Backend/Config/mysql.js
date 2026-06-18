@@ -18,7 +18,7 @@ async function connectMySQL() {
     const conn = await pool.getConnection();
     console.log('🟢 MySQL connected');
 
-    // Create session_logs table if it does not exist
+    
     await conn.execute(`
       CREATE TABLE IF NOT EXISTS session_logs (
         id         INT AUTO_INCREMENT PRIMARY KEY,
