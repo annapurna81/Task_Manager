@@ -66,8 +66,7 @@ async function register(req, res) {
 }
 
 // ── LOGIN ─────────────────────────────────────────────────────────────────────
-// POST /api/auth/login
-// Body: { email, password }
+
 async function login(req, res) {
   try {
     const { email, password } = req.body;
@@ -100,6 +99,7 @@ async function login(req, res) {
       token,
       user: { id: user._id, name: user.name, email: user.email },
     });
+    
 
   } catch (err) {
     res.status(500).json({ message: 'Server error: ' + err.message });
