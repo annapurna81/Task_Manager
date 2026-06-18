@@ -1,11 +1,4 @@
-/*
-  components/TaskCard.js
-  ───────────────────────
-  Displays a single task card with:
-  - Title, description, due date
-  - Status badge (colour coded)
-  - Buttons: move status forward / delete
-*/
+
 
 import React from 'react';
 
